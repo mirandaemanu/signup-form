@@ -4,46 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <section class="side-container">
-        <div class="img-container">
-            <img src="./img/odin-lined.png" alt="Project Odin logo">
-        </div>
-        <a href="https://storyset.com/business">Business illustrations by Storyset</a>
+        <div></div>
+        <img src="./img/Investment-data-bro.svg" alt="" class="background-img">
+       
+        <a href="https://storyset.com/business" class="img-credit">Business illustrations by Storyset</a>
     </section>
     <section class="content-container">
-        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
-        <p>You know you want to.</p>
+        <div class="text-div">
+            <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+            <p>You know you want to.</p>
+        </div>
 
         <form action="" class="signup-form">
-            <p>Let's do this!</p>
+            
             <div class="form-container">
+                <p>Let's do this!</p>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="name" class="form-label">First Name</label>
-                        <input type="text" name="name" id="name">
+                        <input type="text" name="name" id="name" required min="2">
                     </div>
                     <div class="form-field">
                         <label for="lastname" class="form-label">Last Name</label>
-                        <input type="text" name="lastname" id="lastname">
+                        <input type="text" name="lastname" id="lastname" required min="2">
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
-                        <label for="email" class="form-label">Email</label>
+                        <label for="email" class="form-label" required>Email</label>
                         <input type="email" name="email" id="email">
                     </div>
                     <div class="form-field">
                         <label for="phone" class="form-label">Phone Number</label>
-                        <input type="tel" name="phone" id="phone">
+                        <input type="tel" name="phone" id="phone" required>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-field">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" id="password">
+                        <input type="password" name="password" id="password" required>
                     </div>
                     <div class="form-field">
                         <label for="confirm-password" class="form-label">Confirm Password</label>
@@ -51,8 +57,10 @@
                     </div>
                 </div>
             </div>
-            <input type="submit" value="Create Account">
-            <p>Already have an account? <a href="">Log in</a></p>
+            <div class="submit-div">
+                <input type="submit" value="Create Account">
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
         </form>
     </section>
 </body>
