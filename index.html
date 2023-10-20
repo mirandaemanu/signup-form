@@ -47,21 +47,22 @@
                     </div>
                 </div>
                 <div class="form-row">
-                    <div class="form-field">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" id="password" required>
+                    <div class="form-field password-field">
+                        <label for="pass-btn" class="form-label">Password</label>
+                        <input type="password" name="password" required id="pass-btn">
                     </div>
                     <div class="form-field">
-                        <label for="confirm-password" class="form-label">Confirm Password</label>
-                        <input type="password" name="password" id="password">
+                        <label for="confirm-pass-btn" class="form-label">Confirm Password</label>
+                        <input type="password" name="confirm-password" id="confirm-pass-btn">
                     </div>
                 </div>
             </div>
             <div class="submit-div">
-                <input type="submit" value="Create Account">
+                <input type="submit" value="Create Account" id="submit-button">
                 <p>Already have an account? <a href="">Log in</a></p>
             </div>
         </form>
     </section>
+    <script src="./script.js"></script>
 </body>
 </html>
